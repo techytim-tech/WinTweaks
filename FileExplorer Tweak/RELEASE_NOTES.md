@@ -11,5 +11,5 @@ Initial release of the FileExplorer Tweak utility.
 - This tool modifies a per-user registry key under `HKCU`.
 - A .NET runtime is required if you are not using the self-contained build.
 - This file has been scanned by Bitdefender AV as clean.
-- VirusTotal report: https://www.virustotal.com/gui/url/6fc198e704325ad86406a51efe8dea96ca86797aa2e4bdf5b211f79292031cbd/detection
+- VirusTotal report: <a href="https://www.virustotal.com/gui/url/6fc198e704325ad86406a51efe8dea96ca86797aa2e4bdf5b211f79292031cbd/detection" target="_blank" rel="noopener noreferrer">virustotal.com</a>
 
