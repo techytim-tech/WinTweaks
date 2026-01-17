@@ -1,0 +1,50 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        d:DesignWidth="400" d:DesignHeight="250"
+        x:Class="FileExplorer_Tweak.MainWindow"
+        Title="FileExplorer Tweak"
+        Width="400" Height="250"
+        Background="#1E1E1E"
+        CanResize="False">
+	<Border Padding="12">
+		<Grid RowDefinitions="*,Auto">
+			<StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+				<TextBlock Text="This Tweak is to increase Performance of Windows Explorer by adding a shell tweak to the Registry that Disables FolderType"
+						   TextWrapping="Wrap"
+						   FontSize="12"
+						   Foreground="#D2D2D2"
+						   Margin="0,0,0,10"/>
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+					<Button x:Name="BackupButton" Content="Backup" Width="110" Margin="0,0,8,0" HorizontalContentAlignment="Center"/>
+					<Button x:Name="EnableTweakButton" Content="Enable Tweak" Width="110" Margin="0,0,8,0" HorizontalContentAlignment="Center"/>
+					<Button x:Name="RemoveTweakButton" Content="Remove Tweak" Width="118" HorizontalContentAlignment="Center"/>
+				</StackPanel>
+				<TextBlock x:Name="StatusText"
+						   Text=""
+						   TextWrapping="Wrap"
+						   FontSize="12"
+						   Foreground="#9BD0FF"
+						   Margin="0,10,0,0"
+						   HorizontalAlignment="Center"/>
+			</StackPanel>
+			<Button x:Name="RestoreBackupButton"
+					Grid.Row="1"
+					Content="Restore from Backup"
+					Width="180"
+					Margin="0,10,0,0"
+					HorizontalAlignment="Left"
+					VerticalAlignment="Bottom"
+					HorizontalContentAlignment="Center"/>
+			<StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Spacing="8" Margin="0,10,0,0">
+				<StackPanel Orientation="Vertical" VerticalAlignment="Center" Spacing="4">	
+					<TextBlock Text="Created by TechyTim" Foreground="#D2D2D2" FontSize="12"/>
+					<Button x:Name="LinkButton" Content="visit techys.cc" Padding="0" Background="Transparent" Foreground="#0E8FE6" FontSize="12" Cursor="Hand"/>
+				</StackPanel>
+				<Image Source="avares://FileExplorer Tweak/WinTweakIcon_128.png" Width="48" Height="48"/>
+			</StackPanel>
+		</Grid>
+	</Border>
+</Window>
