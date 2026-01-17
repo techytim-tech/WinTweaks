@@ -15,6 +15,6 @@ A release executable will be added to GitHub, and this section will explain how 
 ![FileExplorer Tweak UI](FileExplorer%20Tweak_screenshot.png)
 
 ## Credit
-This idea came from this article: https://www.makeuseof.com/i-fixed-windows-11-file-explorer-lag-by-disabling-this-old-service/
+This idea came from this article: <a href="https://www.makeuseof.com/i-fixed-windows-11-file-explorer-lag-by-disabling-this-old-service/" target="_blank" rel="noopener noreferrer">makeuseof.com</a>
 Reading it led me to create an easy tool to apply the tweak.
 
