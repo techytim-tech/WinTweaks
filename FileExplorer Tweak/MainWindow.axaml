@@ -6,8 +6,7 @@
         d:DesignWidth="400" d:DesignHeight="250"
         x:Class="FileExplorer_Tweak.MainWindow"
         Title="FileExplorer Tweak"
-        Width="400" Height="250"
-        Background="#1E1E1E"
+        Width="400" Height="230"
         CanResize="False">
 	<Border Padding="12">
 		<Grid RowDefinitions="*,Auto">
@@ -15,18 +14,19 @@
 				<TextBlock Text="This Tweak is to increase Performance of Windows Explorer by adding a shell tweak to the Registry that Disables FolderType"
 						   TextWrapping="Wrap"
 						   FontSize="12"
-						   Foreground="#D2D2D2"
 						   Margin="0,0,0,10"/>
-				<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-					<Button x:Name="BackupButton" Content="Backup" Width="110" Margin="0,0,8,0" HorizontalContentAlignment="Center"/>
-					<Button x:Name="EnableTweakButton" Content="Enable Tweak" Width="110" Margin="0,0,8,0" HorizontalContentAlignment="Center"/>
-					<Button x:Name="RemoveTweakButton" Content="Remove Tweak" Width="118" HorizontalContentAlignment="Center"/>
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,6,0,0">
+					<Button x:Name="BackupButton" Content="Backup&#10;Registry" Width="118" Height="60" Padding="8,6" Margin="0,0,8,0" FontSize="14" HorizontalContentAlignment="Center" CornerRadius="0"
+					        ToolTip.Tip="Export the current registry settings to a .reg backup file."/>
+					<Button x:Name="EnableTweakButton" Content="Enable&#10;Tweak" Width="118" Height="60" Padding="8,6" Margin="0,0,8,0" FontSize="14" HorizontalContentAlignment="Center" CornerRadius="0"
+					        ToolTip.Tip="Set FolderType to NotSpecified and restart File Explorer."/>
+					<Button x:Name="RemoveTweakButton" Content="Remove&#10;Tweak" Width="118" Height="60" Padding="8,6" FontSize="14" HorizontalContentAlignment="Center" CornerRadius="0"
+					        ToolTip.Tip="Remove the FolderType value and restart File Explorer."/>
 				</StackPanel>
 				<TextBlock x:Name="StatusText"
 						   Text=""
 						   TextWrapping="Wrap"
 						   FontSize="12"
-						   Foreground="#9BD0FF"
 						   Margin="0,10,0,0"
 						   HorizontalAlignment="Center"/>
 			</StackPanel>
@@ -37,11 +37,12 @@
 					Margin="0,10,0,0"
 					HorizontalAlignment="Left"
 					VerticalAlignment="Bottom"
-					HorizontalContentAlignment="Center"/>
+					HorizontalContentAlignment="Center"
+					ToolTip.Tip="Import a .reg backup file and restart File Explorer."/>
 			<StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Spacing="8" Margin="0,10,0,0">
 				<StackPanel Orientation="Vertical" VerticalAlignment="Center" Spacing="4">	
-					<TextBlock Text="Created by TechyTim" Foreground="#D2D2D2" FontSize="12"/>
-					<Button x:Name="LinkButton" Content="visit techys.cc" Padding="0" Background="Transparent" Foreground="#0E8FE6" FontSize="12" Cursor="Hand"/>
+					<TextBlock Text="Created by TechyTim" FontSize="12"/>
+					<Button x:Name="LinkButton" Content="visit techys.cc" Padding="0" Background="Transparent" FontSize="12" Cursor="Hand"/>
 				</StackPanel>
 				<Image Source="avares://FileExplorer Tweak/WinTweakIcon_128.png" Width="48" Height="48"/>
 			</StackPanel>
